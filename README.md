@@ -14,3 +14,26 @@ Data Columns: There are 29 columns in our dataset, like different pieces of a pu
 
 Years Covered: We're diving into the past from 1987 to 2008, exploring almost two decades of aviation history. It's like taking a trip back in time.
 
+The transformations applied below illustrate the optimization of airline data for advanced analytics.
+
+1.	Create a DF(airlines_1987_to_2008) from this path
+     Dataset Path : %fs ls dbfs:/databricks-datasets/asa/airlines/
+  	
+2.  Create a PySpark Datatypes schema for the above DF
+3.	View the dataframe
+4.	Return count of records in dataframe
+5.	Select the columns - Origin, Dest and Distance
+6.	Filtering data with 'where' method, where Year = 2001
+7.	 Create a new dataframe (airlines_1987_to_2008_drop_DayofMonth) exluding dropped column (“DayofMonth”) 
+8.	Display new DataFrame
+9.	Create column 'Weekend' and a new dataframe(AddNewColumn) and display
+10.	Cast ActualElapsedTime column to integer and use printschema to verify
+11.	Rename 'DepTime' to 'DepartureTime'
+12.	Drop duplicate rows based on Year and Month and Create new df (Drop Rows)
+13.	Display Sort by descending order for Year Column using sort()
+14.	Group data according to Origin and returning count
+15.	Group data according to dest and finding maximum value for each 'Dest'
+16.	Write data in Delta format.
+
+
+
